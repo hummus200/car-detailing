@@ -1,0 +1,60 @@
+# Dependencies (shouldn't be uploaded)
+node_modules
+.pnp
+.pnp.js
+
+# Build outputs
+.next
+out
+build
+dist
+
+# Cache and logs
+.cache
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env*.local
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Executables (should NEVER be in public folder)
+*.exe
+*.dmg
+*.app
+*.deb
+*.rpm
+*.msi
+
+# Large media files - consider using a CDN instead
+# Uncomment these if videos are too large for Vercel
+# public/videos/*.mp4
+# public/videos/*.mov
+
+# SQL files (not needed in production)
+*.sql
+
+# Documentation
+*.md
+!README.md
+
+# Scripts (not needed in production)
+scripts/
