@@ -3,7 +3,7 @@
  * Monochromatic design matching the brand aesthetic
  */
 
-export const EMAIL_FROM = "B2 Auto Detailing <noreply@b2autodetailers.au>";
+export const EMAIL_FROM = "B2 Auto Detailing <contact@b2autodetailing.com>";
 
 export function getEmailBaseStyles() {
   return {
