@@ -28,7 +28,7 @@ export default function BookPage() {
               <li>
                 <p className="font-semibold text-gray-100">Standard package</p>
                 <p className="mt-1 text-xs text-gray-400">
-                  Hatch back / sedan from $149 • Medium / 4WD / SUV from $199
+                  Hatch back / sedan from $149 • Medium / 4WD / SUV from $249
                 </p>
                 <p className="mt-1 text-xs text-gray-500">
                   Wheel & tire cleaning, pre-wash & hand wash, deep vacuum, scrubbing and cleaning all surfaces, interior trim dressing, microfiber towel dry.

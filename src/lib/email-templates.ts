@@ -72,7 +72,7 @@ export function generateEmailWrapper(content: string, title?: string): string {
                     </p>
                     <p style="margin:8px 0 0;font-size:12px;color:#6b7280;">
                       Phone: <a href="tel:+61427816980" style="color:#9ca3af;text-decoration:none;">+61 427 816 980</a> | 
-                      Email: <a href="mailto:contact@b2autodetailers.au" style="color:#9ca3af;text-decoration:none;">contact@b2autodetailers.au</a>
+                      Email: <a href="mailto:contact@b2autodetailing.com" style="color:#9ca3af;text-decoration:none;">contact@b2autodetailing.com</a>
                     </p>
                     <p style="margin:12px 0 0;font-size:11px;color:#4b5563;">
                       © ${new Date().getFullYear()} B2 Auto Detailing. All rights reserved.

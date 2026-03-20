@@ -235,7 +235,7 @@ export default function LandingPage() {
                     Hatch back / sedan from <span className="text-yellow-300/95">$149</span>
                   </p>
                   <p className="text-sm font-medium text-green-400/95">
-                    Medium / 4WD / SUV from $199
+                    Medium / 4WD / SUV from $249
                   </p>
                 </div>
               </div>

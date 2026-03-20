@@ -37,7 +37,7 @@ export default function ContactPage() {
               <div className="flex justify-between gap-4">
                 <dt className="text-gray-400">Email</dt>
                 <dd className="font-medium text-gray-100">
-                  contact@b2autodetailers.au
+                  contact@b2autodetailing.com
                 </dd>
               </div>
               <div className="flex justify-between gap-4">
