@@ -27,7 +27,7 @@ export function InvoiceForm() {
       .split("T")[0],
     lineItems: [{ description: "", quantity: 1, unitPrice: 0, total: 0 }],
     taxRate: 10,
-    notes: "",
+    notes: "Thanks for choosing B2 Auto Detailing\nShine Anywhere, Anytime",
     terms: "BSB 067-873\nACC 2289-0474\n\nAll invoices should be paid within 7 days",
   });
 
@@ -81,7 +81,7 @@ export function InvoiceForm() {
             .split("T")[0],
           lineItems: [{ description: "", quantity: 1, unitPrice: 0, total: 0 }],
           taxRate: 10,
-          notes: "",
+          notes: "Thanks for choosing B2 Auto Detailing\nShine Anywhere, Anytime",
           terms: "BSB 067-873\nACC 2289-0474\n\nAll invoices should be paid within 7 days",
         });
       } else {
