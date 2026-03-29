@@ -44,8 +44,11 @@ function generateInvoiceEmailHTML(invoice: any): string {
           <h1 style="margin:0 0 8px;font-size:28px;font-weight:700;color:${styles.text.primary};">
             Invoice
           </h1>
-          <p style="margin:0;font-size:16px;color:${styles.text.muted};">
+          <p style="margin:0 0 4px;font-size:16px;color:${styles.text.muted};">
             Invoice #${invoice.invoiceNumber}
+          </p>
+          <p style="margin:0;font-size:13px;color:${styles.text.muted};">
+            ABN: 35 362 951 138
           </p>
         </td>
       </tr>

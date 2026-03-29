@@ -28,7 +28,7 @@ export function InvoiceForm() {
     lineItems: [{ description: "", quantity: 1, unitPrice: 0, total: 0 }],
     taxRate: 10,
     notes: "",
-    terms: "Payment via bank transfer\nBSB: 067-873\nAccount: 2289 0474\nABN: 35 362 951 138",
+    terms: "BSB 067-873\nACC 2289-0474\n\nAll invoices should be paid within 7 days",
   });
 
   const updateLineItem = (index: number, field: keyof InvoiceLineItem, value: any) => {
@@ -82,7 +82,7 @@ export function InvoiceForm() {
           lineItems: [{ description: "", quantity: 1, unitPrice: 0, total: 0 }],
           taxRate: 10,
           notes: "",
-          terms: "Payment via bank transfer\nBSB: 067-873\nAccount: 2289 0474\nABN: 35 362 951 138",
+          terms: "BSB 067-873\nACC 2289-0474\n\nAll invoices should be paid within 7 days",
         });
       } else {
         toast.error("Failed to create invoice", {
