@@ -11,7 +11,6 @@ import Image from "next/image";
 
 export default function AdminLoginPage() {
   const router = useRouter();
-  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
@@ -20,34 +19,25 @@ export default function AdminLoginPage() {
     e.preventDefault();
     setError(null);
 
-    if (!email || !password) {
-      setError("Please enter both email and password.");
-      return;
-    }
-
     startTransition(async () => {
       try {
         const response = await fetch("/api/admin/login", {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ email, password }),
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ password }),
         });
 
         const data = await response.json();
 
         if (!response.ok || !data.success) {
-          setError(data.error || "Invalid email or password.");
+          setError(data.error || "Incorrect password.");
           return;
         }
 
-        // Redirect to admin dashboard
         router.push("/admin");
         router.refresh();
       } catch (err) {
         setError("An error occurred. Please try again.");
-        console.error("Login error:", err);
       }
     });
   };
@@ -65,12 +55,8 @@ export default function AdminLoginPage() {
               className="h-9 w-auto sm:h-11"
             />
           </div>
-          <h1 className="text-lg sm:text-xl font-semibold text-white mb-1">
-            Admin Login
-          </h1>
-          <p className="text-xs text-gray-400">
-            Sign in to access the admin dashboard
-          </p>
+          <h1 className="text-lg sm:text-xl font-semibold text-white mb-1">Admin Login</h1>
+          <p className="text-xs text-gray-400">Enter password to continue</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -81,21 +67,6 @@ export default function AdminLoginPage() {
           )}
 
           <div>
-            <Label htmlFor="email">Email</Label>
-            <Input
-              id="email"
-              type="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="admin@example.com"
-              className="mt-2"
-              disabled={isPending}
-              autoComplete="email"
-            />
-          </div>
-
-          <div>
             <Label htmlFor="password">Password</Label>
             <Input
               id="password"
@@ -103,29 +74,21 @@ export default function AdminLoginPage() {
               required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="Enter your password"
+              placeholder="Enter admin password"
               className="mt-2"
               disabled={isPending}
               autoComplete="current-password"
             />
           </div>
 
-          <Button
-            type="submit"
-            className="w-full"
-            disabled={isPending}
-          >
-            {isPending && (
-              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-            )}
+          <Button type="submit" className="w-full" disabled={isPending}>
+            {isPending && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
             {isPending ? "Signing in..." : "Sign In"}
           </Button>
         </form>
 
         <div className="mt-4 text-center">
-          <p className="text-xs text-gray-500">
-            B2 Auto Detailing Admin Portal
-          </p>
+          <p className="text-xs text-gray-500">B2 Auto Detailing Admin Portal</p>
         </div>
       </GlassCard>
     </div>
