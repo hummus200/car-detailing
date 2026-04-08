@@ -32,7 +32,7 @@ export default function ContactPage() {
             <dl className="mt-4 space-y-2 text-sm text-gray-300">
               <div className="flex justify-between gap-4">
                 <dt className="text-gray-400">Phone</dt>
-                <dd className="font-medium text-gray-100">+61 427 816 980</dd>
+                <dd className="font-medium text-gray-100">+61 428 758 790</dd>
               </div>
               <div className="flex justify-between gap-4">
                 <dt className="text-gray-400">Email</dt>

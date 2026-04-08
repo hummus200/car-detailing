@@ -34,7 +34,7 @@ export default function RootLayout({
               © {year} B2 Auto Detailing. All rights reserved.
             </span>
             <span className="text-gray-300">
-              Phone: <span className="font-medium text-gray-100">+61 427 816 980</span>
+              Phone: <span className="font-medium text-gray-100">+61 428 758 790</span>
             </span>
           </div>
         </footer>

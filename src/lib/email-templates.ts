@@ -71,7 +71,7 @@ export function generateEmailWrapper(content: string, title?: string): string {
                       Premium automotive services – Perth, Western Australia
                     </p>
                     <p style="margin:8px 0 0;font-size:12px;color:#6b7280;">
-                      Phone: <a href="tel:+61427816980" style="color:#9ca3af;text-decoration:none;">+61 427 816 980</a> | 
+                      Phone: <a href="tel:+61428758790" style="color:#9ca3af;text-decoration:none;">+61 428 758 790</a> | 
                       Email: <a href="mailto:contact@b2autodetailing.com" style="color:#9ca3af;text-decoration:none;">contact@b2autodetailing.com</a>
                     </p>
                     <p style="margin:12px 0 0;font-size:11px;color:#4b5563;">
@@ -227,7 +227,7 @@ export function generateBookingConfirmedEmail(data: {
     </div>
 
     <p style="margin:24px 0 0;font-size:16px;color:${styles.text.secondary};line-height:1.6;">
-      We'll see you then. If you need to reschedule, reply to this email or call us at <a href="tel:+61427816980" style="color:${styles.text.accent};text-decoration:none;">+61 427 816 980</a>.
+      We'll see you then. If you need to reschedule, reply to this email or call us at <a href="tel:+61428758790" style="color:${styles.text.accent};text-decoration:none;">+61 428 758 790</a>.
     </p>
   `;
 
@@ -250,7 +250,7 @@ export function generateContactReceivedEmail(data: {
       Thanks for getting in touch. We've received your message and will respond shortly.
     </p>
     <p style="margin:24px 0 0;font-size:16px;color:${styles.text.secondary};line-height:1.6;">
-      If your inquiry is urgent, feel free to call us at <a href="tel:+61427816980" style="color:${styles.text.accent};text-decoration:none;">+61 427 816 980</a>.
+      If your inquiry is urgent, feel free to call us at <a href="tel:+61428758790" style="color:${styles.text.accent};text-decoration:none;">+61 428 758 790</a>.
     </p>
   `;
 
@@ -278,7 +278,7 @@ export function generateContactReplyEmail(data: {
       <p style="margin:0;font-size:15px;color:${styles.text.secondary};line-height:1.7;white-space:pre-wrap;">${data.replyMessage}</p>
     </div>
     <p style="margin:24px 0 0;font-size:16px;color:${styles.text.secondary};line-height:1.6;">
-      If you have any follow-up questions, just reply to this email or call us at <a href="tel:+61427816980" style="color:${styles.text.accent};text-decoration:none;">+61 427 816 980</a>.
+      If you have any follow-up questions, just reply to this email or call us at <a href="tel:+61428758790" style="color:${styles.text.accent};text-decoration:none;">+61 428 758 790</a>.
     </p>
   `;
 
